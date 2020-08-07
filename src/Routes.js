@@ -1,22 +1,22 @@
-
-import React from 'react'
-import { Route, Switch } from 'react-router'
-import pageOne from './pages/pageOne';
-import pageTwo from './pages/pageTwo';
-
+import React from "react";
+import { Switch, Route } from "react-router-dom";
+import pageOne from "./pages/pageOne";
+import pageTwo from "./pages/pageTwo";
 
 function Routes() {
-    return (
-        <Switch>
-            <Route path='/' exact component={pageOne} />
-            <Route path='/pagetwo' component={pageTwo} />
-            <Route
-                render={function () {
-                    return <h1>Not Found</h1>;
-                }}
-            />
-        </Switch>
-    )
+  return (
+    <div>
+      <Switch>
+        <Route path="/" exact component={pageOne} />
+        <Route path="/pagetwo" component={pageTwo} />
+        <Route
+          render={function () {
+            return <div>page not found</div>;
+          }}
+        />
+      </Switch>
+    </div>
+  );
 }
 
-export default Routes
+export default Routes;
