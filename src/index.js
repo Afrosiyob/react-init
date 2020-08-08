@@ -1,8 +1,10 @@
 import React, { Suspense } from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+import "./index.scss";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+// bootstrap
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import "./i18n";
 
