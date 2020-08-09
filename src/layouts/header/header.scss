@@ -19,11 +19,14 @@
         padding: 0 10px;
         transition: all 0.2s linear;
         h1 {
+            padding: 0;
+            margin: 0;
             font-size: 70px;
             -webkit-text-stroke: 1px #6DC8D8;
             -webkit-text-fill-color: transparent;
             text-transform: uppercase;
             width: 100%;
+            text-shadow: 0px 0px 15px #6DC8D8;
             text-align: center;
             font: Medium 142px/150px Devant Horgen;
             letter-spacing: 11.36px;
