@@ -28,7 +28,7 @@ function App() {
       var rollY = window.scrollY;
 
       $("body").css({
-        "background-position": "0 -" + rollY / 15 + "px",
+        "background-position": "0 -" + rollY / 7 + "px",
       });
     });
   }, []);

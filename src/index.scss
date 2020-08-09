@@ -7,11 +7,11 @@ body {
     box-sizing: border-box;
     background-image: url('./images/Bg.png');
     background-repeat: repeat;
-    background-position: 0 0;
+    // background-position: 0 0;
     background-size: cover;
     background-attachment: fixed;
     transition: all 0.3s ease-out;
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
     &::-webkit-scrollbar {
         width: 0.7em;
         background-color: rgb(13, 18, 31);
@@ -27,6 +27,9 @@ body {
         outline: 1px solid slategrey;
         border-radius: 10px;
     }
+    // @media all and (max-width:768px) {
+    //     background-size: 120% 100%;
+    // }
 }
 
 code {
