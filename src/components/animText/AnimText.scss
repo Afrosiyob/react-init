@@ -1,0 +1,55 @@
+.anim-text {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    height: 100px;
+    div {
+        position: absolute;
+        width: 100%;
+        display: -webkit-box;
+        -webkit-box-align: center;
+        will-change: transform;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-text-stroke: 1px #6DC8D8;
+        -webkit-text-fill-color: transparent;
+        // animation-direction: reverse;
+        font-size: 70px;
+        bottom: 0;
+        top: 0;
+        text-transform: uppercase;
+    }
+    .left-box {
+        animation-name: a;
+        -webkit-animation-name: a;
+        -webkit-animation-duration: 12s;
+        animation-duration: 24s;
+    }
+    .right-box {
+        left: -100%;
+        animation-name: b;
+        -webkit-animation-name: b;
+        -webkit-animation-duration: 12s;
+        animation-duration: 24s;
+        animation-delay: 12s;
+    }
+    @keyframes a {
+        from {
+            left: -100%;
+        }
+        to {
+            left: 100%;
+        }
+    }
+    @keyframes b {
+        0% {
+            left: -100%;
+        }
+        to {
+            left: 100%;
+        }
+    }
+}

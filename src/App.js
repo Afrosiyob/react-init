@@ -10,6 +10,8 @@ import $ from "jquery";
 import { Button } from "reactstrap";
 import Header from "./layouts/header/header";
 import Sidebar from "./layouts/sideBar/Sidebar";
+import AnimTextSection from "./layouts/animTextSection/AnimTextSection";
+import SliderSection from "./layouts/sliderSection/SliderSection";
 
 // layouts
 
@@ -37,6 +39,9 @@ function App() {
     <div className="App">
       <Sidebar />
       <Header />
+      <AnimTextSection />
+      <SliderSection />
+      {/* this is end */}
       <header className="App-header">
         <Button>ok</Button>
         <button onClick={() => handleClick("en")}> en </button>

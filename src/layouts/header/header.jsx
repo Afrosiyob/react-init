@@ -9,7 +9,9 @@ function header() {
       <TopNavbar />
 
       <div className="center-item">
-        <h1>your ideas-your product</h1>
+        <h1>
+          <code>your ideas-your product</code>
+        </h1>
       </div>
 
       <div className="under-nav">
