@@ -7,7 +7,6 @@
     div {
         position: absolute;
         width: 100%;
-        display: -webkit-box;
         -webkit-box-align: center;
         will-change: transform;
         -webkit-animation-timing-function: linear;
@@ -17,10 +16,17 @@
         -webkit-text-stroke: 1px #6DC8D8;
         -webkit-text-fill-color: transparent;
         // animation-direction: reverse;
-        font-size: 70px;
+        font-size: 60px;
         bottom: 0;
         top: 0;
         text-transform: uppercase;
+        @media all and (max-width: 1024px) {
+            font-size: 50px;
+        }
+        @media all and (max-width:768px) {
+            font-size: 20px;
+            word-wrap: none;
+        }
     }
     .left-box {
         animation-name: a;
