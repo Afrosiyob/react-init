@@ -12,6 +12,7 @@ import Header from "./layouts/header/header";
 import Sidebar from "./layouts/sideBar/Sidebar";
 import AnimTextSection from "./layouts/animTextSection/AnimTextSection";
 import SliderSection from "./layouts/sliderSection/SliderSection";
+import AboutUs from "./layouts/aboutUs/AboutUs";
 
 // layouts
 
@@ -43,68 +44,47 @@ function App() {
           height={"100vh"}
           width={"100vw"}
           params={{
-            fps_limit: 28,
             particles: {
-              collisions: {
-                enable: false,
-              },
               number: {
-                value: 200,
+                value: 60,
                 density: {
-                  enable: false,
+                  enable: true,
+                  value_area: 1500,
                 },
               },
               line_linked: {
                 enable: true,
-                distance: 30,
-                opacity: 0.4,
+                opacity: 0.02,
               },
               move: {
-                speed: 1,
+                direction: "right",
+                speed: 0.05,
+              },
+              size: {
+                value: 1,
               },
               opacity: {
                 anim: {
                   enable: true,
-                  opacity_min: 0.05,
                   speed: 1,
-                  sync: false,
-                },
-                value: 0.4,
-              },
-            },
-            polygon: {
-              enable: true,
-              scale: 0.5,
-              type: "inline",
-              move: {
-                radius: 10,
-              },
-              url: "https://rpj.bembi.org/small-deer.2a0425af.svg",
-              inline: {
-                arrangement: "equidistant",
-              },
-              draw: {
-                enable: true,
-                stroke: {
-                  color: "rgba(255, 255, 255, .2)",
+                  opacity_min: 0.05,
                 },
               },
             },
-            retina_detect: false,
             interactivity: {
               events: {
-                onhover: {
+                onclick: {
                   enable: true,
-                  mode: "bubble",
+                  mode: "push",
                 },
               },
               modes: {
-                bubble: {
-                  size: 6,
-                  distance: 40,
+                push: {
+                  particles_nb: 1,
                 },
               },
             },
+            retina_detect: true,
           }}
         />
       </div>
@@ -117,6 +97,7 @@ function App() {
       <SliderSection />
       <SliderSection />
       <SliderSection />
+      <AboutUs />
       {/* this is end */}
       <header className="App-header">
         <Button>ok</Button>
