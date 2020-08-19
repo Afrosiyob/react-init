@@ -1,9 +1,9 @@
 .slider-wrap {
     position: relative;
-    // overflow: hidden;
+    overflow: hidden;
     width: 100%;
     padding: 20px 0;
-    // height: 500px;
+    height: 500px;
     .titul {
         padding: 0 70px;
         code {
@@ -27,7 +27,16 @@
             font-size: 25px;
         }
     }
-    .owl-cal {
-        img {}
+    .slider-box {
+        position: absolute;
+        width: 1000%;
+        height: 100%;
+        .slide-item {
+            img {
+                width: 500px;
+                height: auto;
+                margin: 0 20px;
+            }
+        }
     }
 }

@@ -34,25 +34,41 @@ function Slider(props) {
     },
   };
 
+  // useEffect(() => {
+  //   // var owl = $(".owl-carousel");
+
+  //   // owl.on("mousewheel", ".owl-stage", function (e) {
+  //   //   alert("fvewfwe");
+  //   //   e.preventDefault();
+  //   // });
+
+  //   $(window).scroll(function () {
+  //     var rollY = window.scrollY;
+
+  //     console.log(rollY);
+
+  //     if (rollY > 600 && rollY % 100 === 0) {
+  //       // alert("oshdi");
+  //       $(".owl-next").trigger("click");
+  //     }
+  //   });
+
+  // }, []);
+
   useEffect(() => {
-    // var owl = $(".owl-carousel");
-
-    // owl.on("mousewheel", ".owl-stage", function (e) {
-    //   alert("fvewfwe");
-    //   e.preventDefault();
-    // });
-
     $(window).scroll(function () {
       var rollY = window.scrollY;
 
       console.log(rollY);
 
-      if (rollY > 600 && rollY % 100 === 0) {
-        // alert("oshdi");
-        // $(".owl-next").trigger("click");
+      if (rollY > 450) {
+        $(".slider-box").css({
+          left: 100 - rollY / 10 + "%",
+        });
       }
     });
   }, []);
+
   return (
     <div className="slider-wrap">
       <div className="titul">
@@ -61,6 +77,7 @@ function Slider(props) {
       </div>
       {/* <div className="slider-box">
         <div className="slide-item">
+          <img src={slideImg} alt="slide img" />
           <img src={slideImg} alt="slide img" />
           <img src={slideImg} alt="slide img" />
           <img src={slideImg} alt="slide img" />
