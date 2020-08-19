@@ -5,12 +5,13 @@ import "./Slider.scss";
 import OwlCarousel from "react-owl-carousel2";
 import slideImg from "../../images/1@2x.png";
 
-function Slider() {
+function Slider(props) {
   const options = {
     items: 3,
     nav: false,
     rewind: true,
     dots: false,
+    startPosition: props.startSlider,
 
     margin: 40,
     center: true,

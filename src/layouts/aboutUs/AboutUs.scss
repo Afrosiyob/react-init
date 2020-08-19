@@ -1,0 +1,55 @@
+.about-us {
+    .left-side {
+        .top-title {
+            h3 {
+                -webkit-text-stroke: 1px #6DC8D8;
+                -webkit-text-fill-color: transparent;
+                text-transform: uppercase;
+                font-size: 42px;
+                @media all and (max-width: 768px) {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .right-side {
+        .top-title {
+            h3 {
+                -webkit-text-stroke: 1px #6DC8D8;
+                -webkit-text-fill-color: transparent;
+                text-transform: uppercase;
+                font-size: 42px;
+                @media all and (max-width: 768px) {
+                    font-size: 20px;
+                }
+            }
+        }
+        .body {
+            .body-top {
+                h1 {
+                    font-size: 62px;
+                    color: #6DC8D8;
+                    text-transform: uppercase;
+                    @media all and (max-width: 768px) {
+                        font-size: 27px;
+                    }
+                }
+            }
+            .body-under {
+                width: 100%;
+                .item-body {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    code {
+                        margin-right: 20px;
+                    }
+                    p {
+                        color: #6DC8D8;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
