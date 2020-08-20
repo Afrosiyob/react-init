@@ -1,13 +1,10 @@
 import React, { useEffect } from "react";
 
 import "./App.scss";
-import { BrowserRouter as Router, Link } from "react-router-dom";
-import Routes from "./Routes";
-import { useTranslation } from "react-i18next";
+
 import Particles from "react-particles-js";
 import $ from "jquery";
 
-import { Button } from "reactstrap";
 import Header from "./layouts/header/Header";
 import Sidebar from "./layouts/sideBar/Sidebar";
 import AnimTextSection from "./layouts/animTextSection/AnimTextSection";
@@ -18,11 +15,6 @@ import AboutUs from "./layouts/aboutUs/AboutUs";
 
 function App() {
   // lang
-  const { t, i18n } = useTranslation();
-
-  function handleClick(lang) {
-    i18n.changeLanguage(lang);
-  }
 
   const option = {
     particles: {
