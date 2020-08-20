@@ -4,8 +4,15 @@ import "./TopNavbar.scss";
 import $ from "jquery";
 
 import logo from "../../images/logo.svg";
+import { useTranslation } from "react-i18next";
 
 function TopNavbar() {
+  const { i18n } = useTranslation();
+
+  function handleClick(lang) {
+    i18n.changeLanguage(lang);
+  }
+
   useEffect(() => {
     let lastScrollTop = 0,
       delta = 5;
@@ -53,9 +60,15 @@ function TopNavbar() {
       </div>
       <div className="right-menu">
         <ul className="lang-ul">
-          <li className="lang-item">uz</li>
-          <li className="lang-item">ru</li>
-          <li className="lang-item">en</li>
+          <li className="lang-item" onClick={() => handleClick("uz")}>
+            uz
+          </li>
+          <li className="lang-item" onClick={() => handleClick("ru")}>
+            ru
+          </li>
+          <li className="lang-item" onClick={() => handleClick("en")}>
+            en
+          </li>
         </ul>
       </div>
     </div>

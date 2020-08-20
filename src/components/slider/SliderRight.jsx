@@ -6,7 +6,7 @@ import "./Slider.scss";
 import slideImg from "../../images/1@2x.png";
 import Draggable from "react-draggable";
 
-function Slider(props) {
+function SliderRight(props) {
   // const options = {
   //   items: 3,
   //   nav: false,
@@ -133,4 +133,4 @@ function Slider(props) {
   );
 }
 
-export default Slider;
+export default SliderRight;

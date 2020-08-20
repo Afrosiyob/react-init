@@ -8,7 +8,7 @@ import Particles from "react-particles-js";
 import $ from "jquery";
 
 import { Button } from "reactstrap";
-import Header from "./layouts/header/header";
+import Header from "./layouts/header/Header";
 import Sidebar from "./layouts/sideBar/Sidebar";
 import AnimTextSection from "./layouts/animTextSection/AnimTextSection";
 import SliderSection from "./layouts/sliderSection/SliderSection";
@@ -96,51 +96,6 @@ function App() {
       <AboutUs />
       <AnimTextSection />
       {/* this is end */}
-      <header className="App-header">
-        <Button>ok</Button>
-        <button onClick={() => handleClick("en")}> en </button>
-        <button onClick={() => handleClick("ru")}> ru </button>
-        <button onClick={() => handleClick("uz")}> uz </button>
-        <Router>
-          <Link to="/"> page one </Link>
-
-          <Link to="/pagetwo"> page one </Link>
-
-          <Routes />
-        </Router>
-
-        <p> {t("hello")} </p>
-        <h1>hello </h1>
-        <h1>hello </h1>
-        <h1>hello </h1>
-        <h1>hello </h1>
-        <h1>hello </h1>
-        <h1>hello </h1>
-        <h1>hello </h1>
-        <h1>hello </h1>
-        <h1>hello </h1>
-        <h1>hello </h1>
-        <h1>hello </h1>
-        <h1>hello </h1>
-        <h1>hello </h1>
-        <h1>hello </h1>
-        <h1>hello </h1>
-        <h1>hello </h1>
-        <h1>hello </h1>
-        <h1>hello </h1>
-        <h1>hello </h1>
-        <h1>hello </h1>
-        <h1>hello </h1>
-        <h1>hello </h1>
-        <h1>hello </h1>
-        <h1>hello </h1>
-        <h1>hello </h1>
-        <h1>hello </h1>
-        <h1>hello </h1>
-        <h1>hello </h1>
-        <h1>hello </h1>
-        <h1>hello </h1>
-      </header>{" "}
     </div>
   );
 }

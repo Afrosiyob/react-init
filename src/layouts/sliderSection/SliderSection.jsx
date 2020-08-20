@@ -1,15 +1,12 @@
 import React from "react";
-import Slider from "../../components/slider/Slider";
+import SliderRight from "../../components/slider/SliderRight";
+import SliderLeft from "../../components/slider/SliderLeft";
 
 function SliderSection() {
   return (
     <div className="my-4">
-      <Slider startSlider="0" />
-      <Slider startSlider="6" />
-      <Slider startSlider="0" />
-      <Slider startSlider="6" />
-      <Slider startSlider="0" />
-      <Slider startSlider="6" />
+      <SliderLeft />
+      <SliderRight />
     </div>
   );
 }
