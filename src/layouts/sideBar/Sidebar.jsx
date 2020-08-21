@@ -12,9 +12,18 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <ul className="menu">
-        <li className="menu-item"> work </li>
-        <li className="menu-item"> about us </li>
-        <li className="menu-item"> contact </li>
+        <li className="menu-item">
+          {" "}
+          <a href="#work">work</a>{" "}
+        </li>
+        <li className="menu-item">
+          {" "}
+          <a href="#abus">about us</a>{" "}
+        </li>
+        <li className="menu-item">
+          {" "}
+          <a href="#contact">contact</a>{" "}
+        </li>
       </ul>
     </div>
   );

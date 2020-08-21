@@ -10,6 +10,7 @@ import Sidebar from "./layouts/sideBar/Sidebar";
 import AnimTextSection from "./layouts/animTextSection/AnimTextSection";
 import SliderSection from "./layouts/sliderSection/SliderSection";
 import AboutUs from "./layouts/aboutUs/AboutUs";
+import Footer from "./layouts/footer/Footer";
 
 // layouts
 
@@ -87,6 +88,7 @@ function App() {
       <SliderSection />
       <AboutUs />
       <AnimTextSection />
+      <Footer />
       {/* this is end */}
     </div>
   );

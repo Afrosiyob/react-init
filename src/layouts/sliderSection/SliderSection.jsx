@@ -4,7 +4,7 @@ import SliderLeft from "../../components/slider/SliderLeft";
 
 function SliderSection() {
   return (
-    <div className="my-4">
+    <div className="my-4" id="work">
       <SliderLeft />
       <SliderRight />
     </div>

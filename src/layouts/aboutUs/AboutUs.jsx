@@ -4,7 +4,7 @@ import { Container, Row, Col } from "reactstrap";
 
 function AboutUs() {
   return (
-    <div className="about-us my-5">
+    <div className="about-us my-5" id="abus">
       <Container>
         <Row>
           <Col md={{ size: 6 }} sm={{ size: 12 }} className="left-side">
