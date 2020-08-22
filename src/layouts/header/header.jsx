@@ -4,7 +4,7 @@ import "./Header.scss";
 import TopNavbar from "../../components/topNavbar/TopNavbar";
 import { useTranslation } from "react-i18next";
 
-import Logo from "../../images/1-1.m4v";
+// import Logo from "../../images/1-1.m4v";
 
 function Header() {
   const { t } = useTranslation();
