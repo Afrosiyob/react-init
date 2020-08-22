@@ -1,14 +1,20 @@
 import React from "react";
-import "./header.scss";
+import "./Header.scss";
 
 import TopNavbar from "../../components/topNavbar/TopNavbar";
 import { useTranslation } from "react-i18next";
+
+import Logo from "../../images/1-1.m4v";
 
 function Header() {
   const { t } = useTranslation();
   return (
     <div className="header">
       <TopNavbar />
+
+      <div className="logo-img">
+        {/* <video src={Logo} autoPlay loop></video> */}
+      </div>
 
       <div className="center-item">
         <h1>
