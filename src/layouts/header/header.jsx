@@ -4,7 +4,7 @@ import "./Header.scss";
 import TopNavbar from "../../components/topNavbar/TopNavbar";
 import { useTranslation } from "react-i18next";
 
-// import Logo from "../../images/1-1.m4v";
+// import Logo from "../../images/header.m4v";
 
 function Header() {
   const { t } = useTranslation();
@@ -12,11 +12,8 @@ function Header() {
     <div className="header">
       <TopNavbar />
 
-      <div className="logo-img">
-        {/* <video src={Logo} autoPlay loop></video> */}
-      </div>
-
       <div className="center-item">
+        {/* <video src={Logo} autoPlay loop></video> */}
         <h1>
           <code> {t("titul")} </code>
         </h1>
